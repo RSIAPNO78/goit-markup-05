@@ -53,7 +53,7 @@ img {
 
 
 
-         /*THIS IS MY HOMEWORK 4 */
+         /*THIS IS MY HOMEWORK 5- MAIN PAGE */
 
          /*HEADER*/
 
@@ -76,9 +76,7 @@ img {
      line-height: 1.17;
           /* 116.667% */
      letter-spacing: 0.03em;
-     text-transform: uppercase;
-     text-transform: uppercase;
-     
+     text-transform: uppercase;   
 }
 
 .studio {
@@ -92,6 +90,16 @@ img {
      font-size: 16px;
      line-height: 1.5;
      letter-spacing: 0.02em;
+     transition-property: color;
+     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+     transition-duration: 250ms;
+     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+     position: relative;
+}
+
+.logo-style {
+     position: relative;
+     color: #404bbf;
 }
 
 .main-header-section {
@@ -109,14 +117,51 @@ img {
      gap: 40px;
 }
 
+
+
+.link-style::after {
+     content: "";
+     width: 100%;
+     height: 4px;
+     border-radius: 2px;
+     position: absolute;
+     right: 0;
+     bottom: -1px;
+     margin-bottom: -26px;
+     background-color: #404bbf;
+}
+
+.link-style::before {
+     content: "";
+     width: 0;
+     height: 4px;
+     border-radius: 2px;
+     position: absolute;
+     right: 0;
+     bottom: -1px;
+     margin-bottom: -26px;
+}
+
+.nav-menu-style:hover .link-style::before {
+     width: 100%;
+     left: 0
+}
+
+.link-style:hover,
+.link-style:focus,
+.contact-color:hover,
+.contact-color:focus {
+     color: var(--OCEAN, #404bbf);
+}
 /* ADDRESS STYLE*/
 
-.contact-color-link {
+.contact-color {
      font-size: 16px;
      color: var(--SLATE, #434455);
      line-height: 1.5;
      font-weight: 400;
      letter-spacing: 0.02em;
+     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address-contact-list {
@@ -125,25 +170,8 @@ img {
      align-items: center;
 }
 
-.address-style-list .contact-color {
-     color: var(--SLATE);
-}
 
-.address-contact-list .contact-color:hover,
-.link-style:hover {
-     color: #404bbf;
-}
-
-.address-contact-list .contact-color:focus,
-.link-style:focus {
-     color: #404bbf;
-}
-
-.address-contact-list .contact-color:active,
-.link-style:active {
-     color: #31D0AA;
-}
-             
+            
            /*FIRST SECTION HERO*/
 
 
@@ -174,6 +202,7 @@ img {
       border: none;
       border-radius: 4px;
       margin: 0 auto;
+      background-color: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
 
 .first-section {
@@ -255,7 +284,7 @@ img {
      margin-bottom: 8px;
 }
 
-         /* THIRD SECTION*/
+         /* THIRD SECTION/*
 
 
  /* This is section 3*/
@@ -352,18 +381,18 @@ img {
      padding: 120px 0;
 }
 
-.team-icon-list {
+.social-media-list {
      display: flex;
      justify-content: center;
      gap: 24px;
 }
 
-.team-icon-item {
+.social-media-item {
      width: 40px;
      height: 40px;
 }
 
-.team-icon-link {
+.social-media-link {
      width: 100%;
      height: 100%;
      background-color: var(--IRIS, #4d5ae5);
@@ -371,14 +400,15 @@ img {
      display: flex;
      align-items: center;
      justify-content: center;
+     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.team-icon-link:hover,
-.team-icon-link:focus {
+.social-media-link:hover,
+.social-media-link:focus {
      background-color: var(--OCEAN, #404bbf);
 }
 
-.team-icon {
+.social-media-icon {
      fill: var(--CLOUD, #f4f4fd);
 }
 
@@ -422,16 +452,22 @@ img {
      justify-content: center;
      align-items: center;
      color: var(--LIGHT-SLATE, #8E8F99);
+     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+          color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers-icon-link:hover,
 .customers-icon-link:focus {
-     color: var(--OCEAN, #404bbf);
      border-color: var(--OCEAN, #404bbf);
 }
 
 .customers-icon {
      fill: currentColor;
+}
+
+.customers-icon-link:hover,
+.customers-icon-link:focus {
+    color: var(--OCEAN, #404bbf);
 }
 
 /* FOOTER */
@@ -547,6 +583,7 @@ img {
      align-items: center;
      background-color: var(--IRIS, #4d5ae5);
      border-radius: 50%;
+     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-icon-link:hover,
@@ -698,4 +735,6 @@ img {
           0px 1px 1px rgba(46, 47, 66, 0.16),
           0px 2px 1px rgba(46, 47, 66, 0.08);
 }
+
+
 
