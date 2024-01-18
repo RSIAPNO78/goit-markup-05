@@ -198,6 +198,23 @@
             <path d="M20.0205 8.37371L45.5352 14.6283L34.6845 23.9941L9.16636 17.7365L20.0205 8.37371ZM19.537 6.76672L6 18.4475L35.168 25.5981L48.7016 13.9174L19.537 6.76672Z" fill="#8E8F99"/>
             <path d="M36.8091 49.3509L48.7016 39.0863L36.8091 36.1691V49.3509Z" fill="#8E8F99"/>
         </symbol>
+    
+        <symbol id="close" width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <g>
+            <g id="Ellipse 1">
+            <circle cx="12" cy="12" r="12"/>
+             <circle cx="12" cy="12" r="11.5" stroke-opacity="0.1"/>
+           </g>
+           <g id="close-black-18dp (2) 1" clip-path="url(#clip0_297024_954)">
+             <path id="Vector" d="M16 8.80571L15.1943 8L12 11.1943L8.80571 8L8 8.80571L11.1943 12L8 15.1943L8.80571 16L12 12.8057L15.1943 16L16 15.1943L12.8057 12L16 8.80571Z"/>
+           </g>
+          </g>
+         <defs>
+            <clipPath id="clip0_297024_954">
+              <rect width="8" height="8" transform="translate(8 8)"/>
+            </clipPath>
+         </defs>
+        </symbol>
     </defs>
 </svg>
 
