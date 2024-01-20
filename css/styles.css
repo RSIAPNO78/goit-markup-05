@@ -98,7 +98,7 @@ img {
      position: relative;
 }
 
-.logo-style {
+.nav-menu-liststyle .logo-style {
      position: relative;
      color: #404bbf;
 }
@@ -201,7 +201,7 @@ img {
      border: none;
      border-radius: 4px;
      margin: 0 auto;
-     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+     background-color: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
 
 .first-section {
