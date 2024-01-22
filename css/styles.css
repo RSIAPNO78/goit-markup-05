@@ -76,7 +76,8 @@ img {
      line-height: 1.17;
           /* 116.667% */
      letter-spacing: 0.03em;
-     text-transform: uppercase;   
+     text-transform: uppercase;
+     color: #404bbf;   
 }
 
 .studio {
@@ -99,7 +100,6 @@ img {
 
 .logo-style {
      position: relative;
-     color: #404bbf;
 }
 
 .main-header-section {
