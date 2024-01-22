@@ -714,7 +714,7 @@ img {
 }
 
 /* MAIN*/
-.button {
+.cards-button {
      font-family: 'Roboto', sans-serif;
      font-weight: 500;
      font-size: 16px;
@@ -740,8 +740,8 @@ img {
      margin-bottom: 72px;
 }
 
-.button:hover,
-.button:focus {
+.cards-button:hover,
+.cards-button:focus {
      color: var(--WHITE);
      background-color: var(--OCEAN);
      border: 1px solid transparent;
@@ -753,7 +753,7 @@ img {
 
 
 
-.button {
+.cards-button {
      cursor: pointer;
 }
 
